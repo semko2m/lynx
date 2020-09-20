@@ -1,0 +1,9 @@
+<div class="container">
+  Personal Details : {{this.formDataService.personalDetails | json}} <br />
+  Address Details : {{this.formDataService.addressDetails | json}}
+  <div class="form-group">
+    <input type="button" value="Back" routerLink="/addressdetails" class="btn btn-info"/>
+    <input type="button" value="Complete" class="btn btn-primary" (click)="submit()"/>
+  </div>
+</div>
+
